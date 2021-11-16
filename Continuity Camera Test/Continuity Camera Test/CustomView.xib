@@ -13,7 +13,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="1Xx-C6-tpd" customClass="CustomVisualEffectView" customModule="Continuity_Camera_Test" customModuleProvider="target">
-                    <rect key="frame" x="5" y="0.0" width="205" height="22"/>
+                    <rect key="frame" x="5" y="0.0" width="200" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="UtP-oE-MQT"/>
                     </constraints>
@@ -35,7 +35,7 @@
                 <constraint firstItem="1Xx-C6-tpd" firstAttribute="centerY" secondItem="Wgc-wd-aDV" secondAttribute="centerY" id="6hv-vX-GP9"/>
                 <constraint firstItem="Bn0-vG-Tf3" firstAttribute="centerY" secondItem="1Xx-C6-tpd" secondAttribute="centerY" id="BZh-p1-2R4"/>
                 <constraint firstAttribute="trailing" secondItem="Bn0-vG-Tf3" secondAttribute="trailing" constant="76" id="L05-sj-htl"/>
-                <constraint firstAttribute="trailing" secondItem="1Xx-C6-tpd" secondAttribute="trailing" id="Ps0-OR-mGF"/>
+                <constraint firstAttribute="trailing" secondItem="1Xx-C6-tpd" secondAttribute="trailing" constant="5" id="Ps0-OR-mGF"/>
                 <constraint firstItem="1Xx-C6-tpd" firstAttribute="leading" secondItem="Wgc-wd-aDV" secondAttribute="leading" constant="5" id="anX-dQ-wsp"/>
                 <constraint firstItem="Bn0-vG-Tf3" firstAttribute="leading" secondItem="Wgc-wd-aDV" secondAttribute="leading" constant="13" id="bjx-hD-oMK"/>
             </constraints>
