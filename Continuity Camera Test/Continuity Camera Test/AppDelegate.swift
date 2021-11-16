@@ -25,10 +25,21 @@ class AppDelegate: NSResponder, NSApplicationDelegate, NSServicesMenuRequestor {
         button.image?.isTemplate = true
 
         statusItem.menu = mainMenu
+        
+        let menuItem1 = NSMenuItem(title: "menuItem1", action: #selector(test(sender:)), keyEquivalent: "")
+        mainMenu.addItem(menuItem1)
 
+        
         let importMenuItem = NSMenuItem(title: "Take Picture", action: nil, keyEquivalent: "")
-        importMenuItem.identifier = NSMenuItem.importFromDeviceIdentifier
+//        let customView =
+        importMenuItem.view = CustomView.createFromNib()
+        
+        
         mainMenu.addItem(importMenuItem)
+    }
+
+    @objc func test(sender: AnyObject) {
+       
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -36,7 +47,13 @@ class AppDelegate: NSResponder, NSApplicationDelegate, NSServicesMenuRequestor {
     }
 
     override func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any? {
-        return self
+        if let pasteboardType = returnType,
+           NSImage.imageTypes.contains(pasteboardType.rawValue)
+        {
+            return mainMenu
+        } else {
+            return super.validRequestor(forSendType: sendType, returnType: returnType)
+        }
     }
 
     func readSelection(from pasteboard: NSPasteboard) -> Bool {

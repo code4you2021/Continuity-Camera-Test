@@ -13,6 +13,11 @@
 		1821FD75273F4A9E00CD1E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821FD73273F4A9E00CD1E34 /* Main.storyboard */; };
 		1821FD81273F4A9E00CD1E34 /* Continuity_Camera_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821FD80273F4A9E00CD1E34 /* Continuity_Camera_TestTests.swift */; };
 		1821FD8C273F4A9E00CD1E34 /* Continuity_Camera_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821FD8B273F4A9E00CD1E34 /* Continuity_Camera_TestUITests.swift */; };
+		18BFB2F827438CED0025DB13 /* ContinuityCameraMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFB2F727438CED0025DB13 /* ContinuityCameraMenuItem.swift */; };
+		18BFB2FA27438ED60025DB13 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFB2F927438ED60025DB13 /* CustomView.swift */; };
+		18BFB2FC274394E80025DB13 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFB2FB274394E80025DB13 /* CustomView.xib */; };
+		18BFB2FE2743A0070025DB13 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFB2FD2743A0070025DB13 /* File.swift */; };
+		18F1526E2743CC4D00122225 /* CustomVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		1821FD87273F4A9E00CD1E34 /* Continuity Camera TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Continuity Camera TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1821FD8B273F4A9E00CD1E34 /* Continuity_Camera_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuity_Camera_TestUITests.swift; sourceTree = "<group>"; };
 		1821FD8D273F4A9E00CD1E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BFB2F727438CED0025DB13 /* ContinuityCameraMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuityCameraMenuItem.swift; sourceTree = "<group>"; };
+		18BFB2F927438ED60025DB13 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		18BFB2FB274394E80025DB13 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		18BFB2FD2743A0070025DB13 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				1821FD73273F4A9E00CD1E34 /* Main.storyboard */,
 				1821FD76273F4A9E00CD1E34 /* Info.plist */,
 				1821FD77273F4A9E00CD1E34 /* Continuity_Camera_Test.entitlements */,
+				18BFB2F727438CED0025DB13 /* ContinuityCameraMenuItem.swift */,
+				18BFB2F927438ED60025DB13 /* CustomView.swift */,
+				18BFB2FB274394E80025DB13 /* CustomView.xib */,
+				18BFB2FD2743A0070025DB13 /* File.swift */,
+				18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */,
 			);
 			path = "Continuity Camera Test";
 			sourceTree = "<group>";
@@ -227,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BFB2FC274394E80025DB13 /* CustomView.xib in Resources */,
 				1821FD72273F4A9E00CD1E34 /* Assets.xcassets in Resources */,
 				1821FD75273F4A9E00CD1E34 /* Main.storyboard in Resources */,
 			);
@@ -253,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BFB2FE2743A0070025DB13 /* File.swift in Sources */,
 				1821FD70273F4A9E00CD1E34 /* ViewController.swift in Sources */,
+				18BFB2FA27438ED60025DB13 /* CustomView.swift in Sources */,
 				1821FD6E273F4A9E00CD1E34 /* AppDelegate.swift in Sources */,
+				18F1526E2743CC4D00122225 /* CustomVisualEffectView.swift in Sources */,
+				18BFB2F827438CED0025DB13 /* ContinuityCameraMenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
