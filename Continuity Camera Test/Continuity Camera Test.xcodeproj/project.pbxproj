@@ -18,6 +18,7 @@
 		18BFB2FC274394E80025DB13 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFB2FB274394E80025DB13 /* CustomView.xib */; };
 		18BFB2FE2743A0070025DB13 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFB2FD2743A0070025DB13 /* File.swift */; };
 		18F1526E2743CC4D00122225 /* CustomVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */; };
+		18F152702743EB0C00122225 /* ContinuityCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1526F2743EB0C00122225 /* ContinuityCameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		18BFB2FB274394E80025DB13 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		18BFB2FD2743A0070025DB13 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVisualEffectView.swift; sourceTree = "<group>"; };
+		18F1526F2743EB0C00122225 /* ContinuityCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuityCameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				18BFB2FB274394E80025DB13 /* CustomView.xib */,
 				18BFB2FD2743A0070025DB13 /* File.swift */,
 				18F1526D2743CC4D00122225 /* CustomVisualEffectView.swift */,
+				18F1526F2743EB0C00122225 /* ContinuityCameraController.swift */,
 			);
 			path = "Continuity Camera Test";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BFB2FE2743A0070025DB13 /* File.swift in Sources */,
+				18F152702743EB0C00122225 /* ContinuityCameraController.swift in Sources */,
 				1821FD70273F4A9E00CD1E34 /* ViewController.swift in Sources */,
 				18BFB2FA27438ED60025DB13 /* CustomView.swift in Sources */,
 				1821FD6E273F4A9E00CD1E34 /* AppDelegate.swift in Sources */,

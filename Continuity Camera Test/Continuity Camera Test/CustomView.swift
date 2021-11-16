@@ -10,6 +10,8 @@ import Cocoa
 class CustomView: NSView, NibLoadable {
     @IBOutlet var wrapView: CustomVisualEffectView!
     
+    let appDelegate =  NSApplication.shared.delegate as? AppDelegate
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
@@ -32,15 +34,25 @@ class CustomView: NSView, NibLoadable {
     override func mouseEntered(with event: NSEvent) {
         super.mouseExited(with: event)
         print("mouseEntered")
-//        self.layer?.backgroundColor = NSColor(red: 0.37, green: 0.63, blue: 1.00, alpha: 1.00).cgColor
+        
+        let position = NSEvent.mouseLocation
+        
+        print("position: ", position)
         
         wrapView.layer?.backgroundColor = NSColor.keyboardFocusIndicatorColor.cgColor
         wrapView.material = .selection
+        
+        
+        
+        
+        appDelegate?.showContinuityCameraMenuItem(position)
         
     }
     
     override func mouseExited(with event: NSEvent) {
         super.mouseExited(with: event)
         wrapView.material = .menu
+        
+        appDelegate?.initContinuityCameraWindow()
     }
 }
